@@ -1,10 +1,884 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>AFUP</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Lettre ouverte pour la survie des événements techniques en France</title>
+<meta name="description" content="Les événements techniques traversent une crise silencieuse. Organisateurs, organisatrices et associations tech alertent l’écosystème et appellent les entreprises à sponsoriser, acheter des places et adhérer.">
+<link rel="canonical" href="https://lettreouverte.afup.org/">
+<meta name="theme-color" content="#111244">
+
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="Lettre ouverte">
+<link rel="manifest" href="/site.webmanifest">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AFUP">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://lettreouverte.afup.org/">
+<meta property="og:title" content="Lettre ouverte pour la survie des événements techniques en France">
+<meta property="og:description" content="Les événements techniques traversent une crise silencieuse. Organisateurs, organisatrices et associations tech alertent l’écosystème et appellent les entreprises à sponsoriser, acheter des places et adhérer.">
+<!-- assets/share.png affiche le nombre de signataires en dur : la régénérer à chaque nouvelle signature, en même temps que le compteur de la section Signataires. -->
+<meta property="og:image" content="https://lettreouverte.afup.org/assets/share.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta property="og:image:alt" content="Carte de partage de la lettre ouverte : les associations et communautés tech appellent les entreprises à sponsoriser les événements, à y inscrire leurs équipes et à adhérer. lettreouverte.afup.org">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lettre ouverte pour la survie des événements techniques en France">
+<meta name="twitter:description" content="Les événements techniques traversent une crise silencieuse. Organisateurs, organisatrices et associations tech alertent l’écosystème et appellent les entreprises à sponsoriser, acheter des places et adhérer.">
+<meta name="twitter:image" content="https://lettreouverte.afup.org/assets/share.png">
+<meta name="twitter:image:alt" content="Carte de partage de la lettre ouverte : les associations et communautés tech appellent les entreprises à sponsoriser les événements, à y inscrire leurs équipes et à adhérer. lettreouverte.afup.org">
+
+<link rel="preload" href="assets/fonts/roboto-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+<style>
+/* Roboto 400 900 — latin (police variable) */
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400 900;font-display:swap;
+  src:url('assets/fonts/roboto-latin.woff2') format('woff2');
+  unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* Roboto 400 900 — latin-ext (police variable) */
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400 900;font-display:swap;
+  src:url('assets/fonts/roboto-latin-ext.woff2') format('woff2');
+  unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* Roboto Condensed 700 — latin */
+@font-face{font-family:'Roboto Condensed';font-style:normal;font-weight:700;font-display:swap;
+  src:url('assets/fonts/roboto-condensed-700-latin.woff2') format('woff2');
+  unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* Roboto Condensed 700 — latin-ext */
+@font-face{font-family:'Roboto Condensed';font-style:normal;font-weight:700;font-display:swap;
+  src:url('assets/fonts/roboto-condensed-700-latin-ext.woff2') format('woff2');
+  unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* Roboto Mono 400 500 — latin (police variable) */
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:400 500;font-display:swap;
+  src:url('assets/fonts/roboto-mono-latin.woff2') format('woff2');
+  unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* Roboto Mono 400 500 — latin-ext (police variable) */
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:400 500;font-display:swap;
+  src:url('assets/fonts/roboto-mono-latin-ext.woff2') format('woff2');
+  unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+
+:root{
+  --paper:#fdfefe;
+  --ink:#111244;
+  --ink-soft:#2f3350;
+  --orange:#ff751f;
+  --orange-light:#ff8c40;
+  --orange-hover:#ffa366;
+  --orange-deep:#c24e06;
+
+  --hairline:rgba(255,255,255,.14);
+  --edge:rgba(255,255,255,.28);
+  --veil:rgba(255,255,255,.06);
+  --veil-hover:rgba(255,255,255,.1);
+
+  --text-soft:rgba(253,254,254,.82);
+  --text-dim:rgba(253,254,254,.6);
+  --text-faint:rgba(253,254,254,.4);
+
+  --font-cond:'Roboto Condensed',Roboto,Arial,sans-serif;
+  --font-mono:'Roboto Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+
+  --radius:14px;
+  --ease:cubic-bezier(.2,.6,.2,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  min-height:100vh;
+  overflow-x:hidden;
+  font-family:Roboto,Arial,sans-serif;
+  color:var(--paper);
+  background:
+    radial-gradient(72% 60% at 2% 98%, rgba(59,165,184,.55) 0%, rgba(43,126,150,.24) 34%, rgba(17,18,68,0) 68%),
+    radial-gradient(58% 46% at 99% 1%, rgba(61,156,191,.48) 0%, rgba(34,34,118,.24) 40%, rgba(17,18,68,0) 72%),
+    linear-gradient(128deg,#0b0c30 0%,#111244 34%,#191a60 62%,#1f2070 100%);
+  background-attachment:fixed;
+  -webkit-font-smoothing:antialiased;
+  text-wrap:pretty;
+}
+h1,h2{margin:0;font-weight:700;text-wrap:pretty}
+p{margin:0}
+img{max-width:100%}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:none;box-shadow:0 0 0 3px rgba(79,187,203,.55)}
+::selection{background:var(--orange);color:#fff}
+
+/* Inline text links only — buttons and card links stay unadorned. */
+p a:not(.logo),.footer__nav a{
+  color:var(--orange-light);
+  border-bottom:1px solid rgba(255,163,102,.38);
+  transition:color 160ms var(--ease),border-color 160ms var(--ease);
+}
+p a:not(.logo):hover,.footer__nav a:hover{color:var(--orange-hover);border-bottom-color:var(--orange-hover)}
+
+.wrap{max-width:1180px;margin-inline:auto}
+.rule{border-top:1px solid var(--hairline);padding-top:56px}
+
+.eyebrow{
+  font-family:var(--font-cond);font-weight:700;font-size:13px;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--text-dim);
+}
+.eyebrow--accent{color:var(--orange-deep)}
+.eyebrow--faint{color:var(--text-faint)}
+
+.btn{
+  display:inline-flex;align-items:center;border-radius:999px;font-weight:700;
+  transition:background-color 160ms var(--ease),color 160ms var(--ease),border-color 160ms var(--ease);
+}
+.btn--primary{background:var(--orange);color:#fff}
+.btn--primary:hover{background:var(--orange-light);color:#fff}
+.btn--ghost{border:1px solid var(--edge);color:var(--paper)}
+.btn--ghost:hover{background:var(--veil-hover);color:var(--paper)}
+.btn--sm{height:40px;padding:0 22px;font-size:15px}
+.btn--md{height:52px;padding:0 26px;font-size:16px}
+.btn--lg{height:52px;padding:0 30px;font-size:17px}
+
+.logo{display:flex;align-items:center}
+.logo img{display:block;width:auto;}
+
+/* ---------- header ---------- */
+.header{
+  padding:22px 24px;display:flex;align-items:center;justify-content:space-between;
+  gap:20px;flex-wrap:wrap;
+}
+.header__brand{display:flex;align-items:center;gap:16px}
+.header__logo img{height:28px}
+.header__sep{width:1px;height:26px;background:var(--hairline)}
+
+/* ---------- hero ---------- */
+.hero{padding:40px 24px 72px}
+.hero h1{
+  font-size:clamp(32px,5.4vw,60px);line-height:1.1;letter-spacing:-.02em;max-width:26ch;
+}
+.hero__lead{
+  margin-top:22px;font-size:clamp(17px,2vw,19px);line-height:1.7;
+  color:var(--text-soft);max-width:56ch;
+}
+.hero__actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+
+/* ---------- la lettre ---------- */
+.letter-section{padding:0 clamp(12px,3vw,24px) 88px;scroll-margin-top:24px}
+.letter{
+  background:var(--paper);border-radius:var(--radius);padding:clamp(20px,4.4vw,64px);
+  color:var(--ink-soft);
+  box-shadow:0 1px 2px rgba(17,18,68,.08),0 8px 24px rgba(17,18,68,.10);
+}
+.letter h2{
+  margin:40px 0 0;font-size:clamp(22px,2.8vw,28px);line-height:1.25;
+  letter-spacing:-.01em;color:var(--ink);
+}
+.letter h2:first-of-type{margin-top:44px}
+.letter h2.letter__demands{margin-top:48px}
+.letter p{margin:16px 0 0;font-size:17px;line-height:1.75}
+.letter p.letter__salutation{
+  margin-top:22px;font-weight:700;font-size:clamp(19px,2.4vw,23px);line-height:1.5;color:var(--ink);
+}
+.letter p.letter__opening{margin-top:20px}
+.letter p.letter__coda{margin-top:26px}
+.letter p.letter__close{
+  margin-top:24px;font-weight:700;font-size:clamp(21px,2.6vw,26px);
+  line-height:1.35;letter-spacing:-.01em;color:var(--ink);
+}
+
+.asks{display:grid;gap:14px;margin-top:22px}
+.ask{
+  display:flex;gap:16px;align-items:flex-start;padding:20px 22px;
+  border-radius:var(--radius);border:1px solid #e3e5ef;background:#f2f3f8;
+}
+.ask__num{flex:none;font-family:var(--font-mono);font-weight:900;font-size:19px;color:var(--orange-deep)}
+.letter .ask p{margin:0;font-size:16.5px;line-height:1.65}
+.ask strong{color:var(--ink)}
+
+/* ---------- signataires ---------- */
+.signatories{padding:0 24px 88px;scroll-margin-top:24px}
+.signatories__head{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:24px;flex-wrap:wrap;
+}
+.signatories__head h2{
+  margin-top:14px;font-size:clamp(26px,4vw,44px);line-height:1.1;letter-spacing:-.02em;
+}
+.signatories__count{font-family:var(--font-mono);font-weight:900;color:var(--orange)}
+.signatories__invite{font-size:15px;line-height:1.6;color:var(--text-dim);max-width:38ch}
+
+.sigs{
+  margin:32px 0 0;padding:0;list-style:none;display:grid;gap:16px;
+  grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+}
+.sig{
+  border-radius:var(--radius);background:var(--veil);border:1px solid var(--hairline);
+  transition:background-color 160ms var(--ease);
+}
+.sig:hover{background:var(--veil-hover)}
+/* Porte la mise en page et le padding : la carte entière est ainsi cliquable. */
+.sig__inner{
+  display:flex;flex-direction:column;gap:16px;padding:22px;height:100%;
+  align-items:center;text-align:center;color:inherit;
+}
+.sig__mark{height:56px;display:flex;align-items:center;justify-content:center}
+.sig__logo{
+  display:flex;align-items:center;justify-content:center;
+  width:150px;height:52px;padding:8px 10px;border-radius:8px;background:var(--paper);
+}
+.sig__logo img{display:block;width:auto;height:auto;max-height:36px;max-width:130px}
+/* Repli lorsqu'une organisation n'a pas de logo. Aucun cas actuellement,
+   mais le CI vérifie ce point : ne pas supprimer. */
+.sig__initials{
+  display:flex;align-items:center;justify-content:center;width:56px;height:56px;
+  border-radius:999px;border:1px dashed var(--edge);
+  font-family:var(--font-mono);font-size:15px;color:var(--text-faint);
+}
+.sig__name{font-weight:700;font-size:16px;line-height:1.3}
+
+/* ---------- presse ---------- */
+.press-section{padding:0 24px 72px;scroll-margin-top:24px}
+.press__head{
+  display:flex;gap:clamp(24px,4vw,48px);align-items:flex-end;justify-content:space-between;
+  flex-wrap:wrap;margin-top:14px;
+}
+.press__head h2{font-size:clamp(24px,3.4vw,36px);line-height:1.15;letter-spacing:-.02em;max-width:24ch}
+.press__contact{font-size:15px;line-height:1.6;color:var(--text-dim);max-width:40ch}
+.press{
+  margin-top:28px;display:grid;gap:16px;
+  grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+}
+.press__card{
+  display:flex;flex-direction:column;gap:12px;padding:24px;
+  border-radius:var(--radius);background:var(--veil);border:1px solid var(--hairline);
+  color:var(--paper);transition:background-color 160ms var(--ease);
+}
+.press__card:hover{background:var(--veil-hover)}
+.press__logo{
+  display:flex;align-items:center;justify-content:center;height:44px;width:120px;
+  border-radius:8px;background:var(--paper);color:#9a9eb8;
+  font-family:var(--font-cond);font-weight:700;font-size:12px;
+  letter-spacing:.14em;text-transform:uppercase;
+}
+.press__meta{font-family:var(--font-mono);font-size:13px;color:var(--text-faint)}
+.press__title{font-weight:700;font-size:17px;line-height:1.35}
+.press__desc{font-size:15px;line-height:1.6;color:var(--text-dim)}
+.press__cta{font-weight:700;font-size:15px;color:var(--orange-light)}
+
+/* ---------- relayer ---------- */
+.share-section{padding:0 24px 72px}
+.share{display:flex;gap:clamp(24px,4vw,48px);align-items:flex-start;flex-wrap:wrap}
+.share__pitch{flex:1 1 380px;min-width:260px}
+.share__pitch h2{margin-top:14px;font-size:clamp(24px,3.4vw,36px);line-height:1.15;letter-spacing:-.02em;max-width:24ch}
+.share__intro{margin-top:18px;font-size:17px;line-height:1.7;color:var(--text-soft);max-width:52ch}
+.share__actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.share__suggestion{
+  flex:1 1 340px;min-width:260px;padding:28px;
+  border-radius:var(--radius);background:var(--veil);border:1px solid var(--hairline);
+}
+.share__suggestion p{margin-top:16px;font-size:16px;line-height:1.7;color:var(--text-soft)}
+.share__url{font-family:var(--font-mono);color:var(--orange-light)}
+
+/* ---------- contact ---------- */
+.contact-section{padding:0 24px 88px}
+.contact{
+  border-radius:22px;background:rgba(0,0,0,.22);border:1px solid var(--hairline);
+  padding:clamp(28px,4.5vw,52px);display:flex;gap:40px;
+  align-items:center;justify-content:space-between;flex-wrap:wrap;
+}
+.contact__text{flex:1 1 360px;min-width:250px}
+.contact__slogans{
+  display:flex;flex-wrap:wrap;gap:clamp(18px,3vw,40px);
+  font-weight:700;font-size:clamp(20px,2.6vw,28px);line-height:1.2;color:var(--orange);
+}
+.contact__lead{margin-top:20px;font-size:17px;line-height:1.7;color:var(--text-soft);max-width:52ch}
+.contact__cta{
+  height:58px;padding:0 clamp(20px,3vw,34px);
+  font-family:var(--font-mono);font-size:clamp(15px,2vw,20px);
+}
+
+/* ---------- footer ---------- */
+.footer{border-top:1px solid var(--hairline);background:rgba(0,0,0,.24)}
+.footer__inner{
+  padding:34px 24px;display:flex;align-items:center;justify-content:space-between;
+  gap:24px;flex-wrap:wrap;
+}
+.footer__nav{display:flex;gap:24px;flex-wrap:wrap;font-size:15px}
+.footer__credit{display:flex;align-items:center;gap:10px;font-size:16px}
+.footer__credit img{height:24px}
+
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:0ms!important;animation-duration:0ms!important}
+}
+</style>
 </head>
 <body>
+
+<header class="wrap header">
+  <div class="header__brand">
+    <a class="logo header__logo" href="https://afup.org" target="_blank" rel="noopener"><img src="assets/afup/afup-icon.svg" alt="AFUP" width="265" height="90"></a>
+    <span class="header__sep" aria-hidden="true"></span>
+    <span class="eyebrow">Lettre ouverte</span>
+  </div>
+  <a class="btn btn--primary btn--sm" href="mailto:lettreouverte@afup.org">Rejoindre le mouvement</a>
+</header>
+
+<main>
+
+<section class="wrap hero">
+  <h1>Lettre ouverte pour la survie des événements techniques en France</h1>
+  <p class="hero__lead">Les événements techniques traversent une crise silencieuse. Nous, organisateurs, organisatrices et associations tech, alertons l’écosystème sur ce qui est en train de se jouer.</p>
+  <div class="hero__actions">
+    <a class="btn btn--primary btn--lg" href="#lettre">Lire la lettre</a>
+    <a class="btn btn--ghost btn--lg" href="#signataires">Voir les signataires</a>
+  </div>
+</section>
+
+<section class="wrap letter-section" id="lettre" aria-labelledby="lettre-titre">
+  <article class="letter">
+    <span class="eyebrow eyebrow--accent">La lettre</span>
+    <p class="letter__salutation" id="lettre-titre">Entreprises, développeurs et développeuses, décideurs et décideuses technologiques,</p>
+    <p class="letter__opening">Les événements techniques traversent aujourd’hui une crise silencieuse. Budgets sponsoring resserrés, achats de billets en baisse, adhésions associatives en recul&nbsp;: partout, les mêmes signaux d’alerte s’allument et l’inquiétude s’installe au sein des organisations.</p>
+    <p>Si rien ne change, nombre d’entre eux ne verront pas de nouvelle édition. Nous, organisateurs, organisatrices et associations tech, alertons aujourd’hui l’écosystème sur ce qui est en train de se jouer.</p>
+
+    <h2>Le premier domino d’une transformation qui nous concerne toutes et tous</h2>
+    <p>L’arrivée massive de l’IA dans nos métiers bouleverse la manière dont les entreprises pensent leurs priorités et leurs budgets. Les événements techniques, souvent perçus comme une dépense «&nbsp;accessoire&nbsp;», sont les premiers postes sacrifiés. Or, ces rassemblements ne sont pas en marge de cette transformation&nbsp;: ils en sont un observatoire et un lieu d’appropriation collective. Les perdre pour de bon, c’est se priver d’un espace essentiel au moment précis où le secteur en a le plus besoin.</p>
+
+    <h2>Une formation que rien ne remplace</h2>
+    <p>Aucun module e-learning, aucune documentation, aucune veille technique, aucun outil d’IA ne reproduit ce qu’apporte une conférence technique&nbsp;: la confrontation directe à des retours d’expérience réels, la découverte de pratiques qu’on n’aurait pas cherchées seul·e, les échanges informels qui mènent aux solutions. Pour les équipes techniques, ces événements sont un accélérateur de compétences que les entreprises ne pourront pas recréer ailleurs, une fois disparus.</p>
+
+    <h2>Remettre l’humain au centre, nourrir les vocations</h2>
+    <p>Nous passons désormais une large partie de nos journées à échanger avec des IA. Dans ce contexte, les événements techniques prennent une valeur unique&nbsp;: ce sont des lieux où l’on se retrouve entre humains, où l’on partage une expertise, où de nouvelles vocations naissent, notamment autour des projets open source dont dépendent silencieusement la majorité de nos entreprises. Ces projets ont besoin de contributeurs et contributrices, de mainteneurs et mainteneuses, de relève mais aussi d’enthousiasme et d’inspiration. Les événements techniques sont l’un des rares endroits où cette relève se construit.</p>
+
+    <h2>Un choix de société</h2>
+    <p>Derrière ces trois constats se joue une question plus large&nbsp;: quel écosystème technique voulons-nous&nbsp;: un quotidien dicté par nos outils, ou un secteur qui continue à se construire collectivement&nbsp;? Ce choix se fait dès aujourd’hui, dans les décisions budgétaires de chaque entreprise.</p>
+
+    <h2 class="letter__demands">Ce que nous demandons</h2>
+    <p>Pour que les événements techniques continuent d’exister, nous appelons les entreprises et les professionnel·le·s du secteur à&nbsp;:</p>
+    <div class="asks">
+      <div class="ask">
+        <span class="ask__num" aria-hidden="true">01</span>
+        <p><strong>Sponsoriser</strong> les événements techniques, même modestement, et affirmer ainsi la place de ces rencontres dans leur stratégie&nbsp;;</p>
+      </div>
+      <div class="ask">
+        <span class="ask__num" aria-hidden="true">02</span>
+        <p><strong>Acheter des places</strong> pour leurs équipes, et les libérer pour y assister. Et si possible tôt&nbsp;: les billets financent les échéances auprès des prestataires des événements&nbsp;;</p>
+      </div>
+      <div class="ask">
+        <span class="ask__num" aria-hidden="true">03</span>
+        <p><strong>Adhérer aux associations</strong> qui portent ces événements, pour soutenir un modèle économique durable et indépendant.</p>
+      </div>
+    </div>
+    <p class="letter__coda">Ce n’est pas une question de générosité, mais d’investissement direct dans la compétence, l’attractivité et la résilience de vos propres équipes techniques. Nous avons conscience que la situation économique est difficile, mais nous faisons appel à toutes et à tous pour que l’écosystème survive, les événements tech en sont un pilier.</p>
+    <p class="letter__close">Alors, vous êtes avec nous&nbsp;?</p>
+  </article>
+</section>
+
+<!--
+  Signataires — liste triée par ordre alphabétique (fr).
+  En ajouter un : dupliquer un bloc .sig en respectant l'ordre alphabétique,
+  puis mettre à jour le compteur .signatories__count ci-dessous.
+-->
+<section class="wrap signatories" id="signataires" aria-labelledby="signataires-titre">
+  <div class="rule signatories__head">
+    <div>
+      <span class="eyebrow">Signataires</span>
+      <h2 id="signataires-titre"><span class="signatories__count">25</span> organisations ont signé</h2>
+    </div>
+    <p class="signatories__invite">Votre organisation veut apparaître ici&nbsp;? Écrivez-nous à <a href="mailto:lettreouverte@afup.org">lettreouverte@afup.org</a>.</p>
+  </div>
+
+  <ul class="sigs">
+    <li class="sig"><a class="sig__inner" href="https://www.pycon.fr/2026/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/afpy.svg" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">AFPY</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://afup.org/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/afup/afup-logo-full-color.svg" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">AFUP</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://agilestrasbourg.fr/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/agile-tour-strasbourg.png" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">Agile Tour Strasbourg</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://bdxio.fr/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/bdx-io.png" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">BDX I/O</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://cloudnord.fr/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/cloud-nord.png" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">Cloud Nord</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://laravel-france.com/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/laravel-france.png" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">Communauté Laravel France</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://symfony.com/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/symfony.svg" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">Communauté Symfony</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://devw.ai/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/dev-with-ai.png" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">Dev With AI</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://devlille.fr/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/devlille.svg" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">DevLille</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://www.devquest.fr/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/devquest.svg" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">DevQuest</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://www.lavajug.org/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/lavajug.png" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">LavaJUG</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://www.lyonjs.org/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/lyonjs.svg" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">LyonJS</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://mixitconf.org/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/mixit.svg" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">Mixit</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://opengento.fr/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/opengento.svg" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">OpenGento</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://www.paris-web.fr/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/paris-web.svg" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">Paris Web</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://thephp.foundation/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/php-foundation.png" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">PHP Foundation</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://www.meetup.com/fr-fr/python-afpy-lyon/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/python-lyon.png" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">Python Lyon</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://reactnativeconnection.io/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/react-native-connection.png" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">React Native Connection</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://snowcamp.io/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/snowcamp.png" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">SnowCamp</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://sunny-tech.io/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/sunny-tech.svg" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">Sunny Tech</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://swiftconnection.io/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/swift-connection.png" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">Swift Connection</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://syliusparty.emagma.fr/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/sylius-party.svg" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">Sylius Party</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://techwork.events/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/techwork.png" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">Tech’Work</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://www.volcamp.io/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/volcamp.svg" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">Volcamp</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://webdays.events/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/web-days.png" alt="" loading="lazy" decoding="async"></span></span><span class="sig__name">Web Days — Aix-en-Provence</span></a></li>
+  </ul>
+</section>
+
+<section class="wrap press-section" id="presse" aria-labelledby="presse-titre">
+  <div class="rule">
+    <span class="eyebrow">Presse</span>
+    <div class="press__head">
+      <h2 id="presse-titre">Ils en ont parlé</h2>
+      <p class="press__contact">Vous couvrez le sujet ou vous souhaitez nous interviewer&nbsp;: <a href="mailto:lettreouverte@afup.org">lettreouverte@afup.org</a>.</p>
+    </div>
+    <!-- Cartes de retombées presse : remplacer href="#" et les libellés à mesure des publications. -->
+    <div class="press">
+      <a class="press__card" href="#">
+        <span class="press__logo">Logo</span>
+        <span class="press__meta">Média — jj.mm.2026</span>
+        <span class="press__title">Titre de l’article ou de l’émission</span>
+        <span class="press__desc">Une phrase de contexte sur l’angle retenu.</span>
+        <span class="press__cta">Lire →</span>
+      </a>
+      <a class="press__card" href="#">
+        <span class="press__logo">Logo</span>
+        <span class="press__meta">Média — jj.mm.2026</span>
+        <span class="press__title">Titre de l’article ou du podcast</span>
+        <span class="press__desc">Une phrase de contexte sur l’angle retenu.</span>
+        <span class="press__cta">Écouter →</span>
+      </a>
+      <a class="press__card" href="#">
+        <span class="press__logo">Logo</span>
+        <span class="press__meta">Média — jj.mm.2026</span>
+        <span class="press__title">Titre de la reprise</span>
+        <span class="press__desc">Une phrase de contexte sur l’angle retenu.</span>
+        <span class="press__cta">Lire →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="wrap share-section" aria-labelledby="relayer-titre">
+  <div class="rule share">
+    <div class="share__pitch">
+      <span class="eyebrow">Relayer</span>
+      <h2 id="relayer-titre">Faites circuler la lettre</h2>
+      <p class="share__intro">Un partage atteint les personnes qui décident des budgets. C’est l’action la plus rapide.</p>
+      <div class="share__actions">
+        <a class="btn btn--primary btn--md" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Flettreouverte.afup.org" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn--ghost btn--md" href="https://x.com/intent/post?url=https%3A%2F%2Flettreouverte.afup.org&amp;text=Les%20%C3%A9v%C3%A9nements%20techniques%20qui%20m%E2%80%99ont%20form%C3%A9%C2%B7e%20risquent%20de%20dispara%C3%AEtre%2C%20faute%20de%20sponsors%20et%20de%20billets%20vendus.%20Si%20votre%20entreprise%20en%20profite%2C%20rendez-le%20lui%20%3A%20sponsorisez%2C%20achetez%20des%20places%2C%20adh%C3%A9rez." target="_blank" rel="noopener">X</a>
+        <a class="btn btn--ghost btn--md" href="https://bsky.app/intent/compose?text=Les%20%C3%A9v%C3%A9nements%20techniques%20qui%20m%E2%80%99ont%20form%C3%A9%C2%B7e%20risquent%20de%20dispara%C3%AEtre%2C%20faute%20de%20sponsors%20et%20de%20billets%20vendus.%20Si%20votre%20entreprise%20en%20profite%2C%20rendez-le%20lui%20%3A%20sponsorisez%2C%20achetez%20des%20places%2C%20adh%C3%A9rez.%20https%3A%2F%2Flettreouverte.afup.org" target="_blank" rel="noopener">Bluesky</a>
+        <a class="btn btn--ghost btn--md" href="mailto:lettreouverte@afup.org">Signer la lettre</a>
+      </div>
+    </div>
+    <div class="share__suggestion">
+      <span class="eyebrow eyebrow--faint">Texte suggéré</span>
+      <p>Les événements techniques qui m’ont formé·e risquent de disparaître, faute de sponsors et de billets vendus. Une lettre ouverte a été publiée&nbsp;: elle mérite d’arriver sur le bureau de celles et ceux qui décident des budgets.<br><br>Si votre entreprise en profite, rendez-le lui&nbsp;: sponsorisez, achetez des places, adhérez.<br><span class="share__url">lettreouverte.afup.org</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap contact-section">
+  <div class="contact">
+    <div class="contact__text">
+      <p class="contact__slogans"><span>Sponsorisez.</span><span>Adhérez.</span><span>Inscrivez vos équipes.</span></p>
+      <p class="contact__lead">Une question, une signature à ajouter, une envie de rejoindre le mouvement&nbsp;: une seule adresse.</p>
+    </div>
+    <a class="btn btn--primary contact__cta" href="mailto:lettreouverte@afup.org">lettreouverte@afup.org</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <nav class="footer__nav" aria-label="Pied de page">
+      <a href="#lettre">La lettre</a>
+      <a href="#signataires">Signataires</a>
+      <a href="mailto:lettreouverte@afup.org">Contact</a>
+    </nav>
+    <p class="footer__credit">Une initiative proposée par l’<a class="logo" href="https://afup.org" target="_blank" rel="noopener"><img src="assets/afup/afup-icon.svg" alt="AFUP" width="265" height="90"></a></p>
+  </div>
+</footer>
+
+<!--
+  Données structurées schema.org.
+  ATTENTION : la liste des signataires est dupliquée ici et dans la grille
+  ci-dessus. Tout ajout doit être répercuté aux deux endroits, ainsi que sur
+  le compteur et sur assets/share.png.
+  Les champs "url" / "sameAs" des organisations signataires restent à compléter :
+  n'y mettre que des adresses officielles vérifiées, jamais une supposition.
+-->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://lettreouverte.afup.org/#website",
+      "url": "https://lettreouverte.afup.org/",
+      "name": "Lettre ouverte pour la survie des événements techniques en France",
+      "description": "Les événements techniques traversent une crise silencieuse. Organisateurs, organisatrices et associations tech alertent l’écosystème et appellent les entreprises à sponsoriser, acheter des places et adhérer.",
+      "inLanguage": "fr-FR",
+      "publisher": {
+        "@id": "https://afup.org/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://lettreouverte.afup.org/#webpage",
+      "url": "https://lettreouverte.afup.org/",
+      "name": "Lettre ouverte pour la survie des événements techniques en France",
+      "description": "Les événements techniques traversent une crise silencieuse. Organisateurs, organisatrices et associations tech alertent l’écosystème et appellent les entreprises à sponsoriser, acheter des places et adhérer.",
+      "inLanguage": "fr-FR",
+      "isPartOf": {
+        "@id": "https://lettreouverte.afup.org/#website"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://lettreouverte.afup.org/#carte-partage"
+      },
+      "mainEntity": {
+        "@id": "https://lettreouverte.afup.org/#lettre"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://lettreouverte.afup.org/#carte-partage",
+      "url": "https://lettreouverte.afup.org/assets/share.png",
+      "contentUrl": "https://lettreouverte.afup.org/assets/share.png",
+      "width": 1200,
+      "height": 627,
+      "caption": "Carte de partage de la lettre ouverte, appelant les entreprises à sponsoriser les événements techniques, à y inscrire leurs équipes et à adhérer aux associations qui les portent."
+    },
+    {
+      "@type": "Article",
+      "@id": "https://lettreouverte.afup.org/#lettre",
+      "headline": "Lettre ouverte pour la survie des événements techniques en France",
+      "name": "Lettre ouverte pour la survie des événements techniques en France",
+      "description": "Les événements techniques traversent une crise silencieuse. Organisateurs, organisatrices et associations tech alertent l’écosystème et appellent les entreprises à sponsoriser, acheter des places et adhérer.",
+      "inLanguage": "fr-FR",
+      "datePublished": "2026-09-02T08:00:00+02:00",
+      "dateModified": "2026-09-02T08:00:00+02:00",
+      "isAccessibleForFree": true,
+      "mainEntityOfPage": {
+        "@id": "https://lettreouverte.afup.org/#webpage"
+      },
+      "image": {
+        "@id": "https://lettreouverte.afup.org/#carte-partage"
+      },
+      "publisher": {
+        "@id": "https://afup.org/#organization"
+      },
+      "author": [
+        {
+          "@id": "https://lettreouverte.afup.org/#org-afpy"
+        },
+        {
+          "@id": "https://afup.org/#organization"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-agile-tour-strasbourg"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-bdx-i-o"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-cloud-nord"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-communaute-laravel-france"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-communaute-symfony"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-dev-with-ai"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-devlille"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-devquest"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-lavajug"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-lyonjs"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-mixit"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-opengento"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-paris-web"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-php-foundation"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-python-lyon"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-react-native-connection"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-snowcamp"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-sunny-tech"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-swift-connection"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-sylius-party"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-tech-work"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-volcamp"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-web-days-aix-en-provence"
+        }
+      ],
+      "articleSection": [
+        "Le premier domino d’une transformation qui nous concerne toutes et tous",
+        "Une formation que rien ne remplace",
+        "Remettre l’humain au centre, nourrir les vocations",
+        "Un choix de société",
+        "Ce que nous demandons"
+      ],
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Événements techniques"
+        },
+        {
+          "@type": "Thing",
+          "name": "Conférences techniques"
+        },
+        {
+          "@type": "Thing",
+          "name": "Communautés open source"
+        },
+        {
+          "@type": "Thing",
+          "name": "Écosystème tech français"
+        },
+        {
+          "@type": "Thing",
+          "name": "Sponsoring"
+        }
+      ],
+      "keywords": [
+        "événements techniques",
+        "conférences",
+        "communautés tech",
+        "open source",
+        "sponsoring",
+        "associations",
+        "France"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://afup.org/#organization",
+      "name": "Association Française des Utilisateurs de PHP",
+      "alternateName": "AFUP",
+      "url": "https://afup.org/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://lettreouverte.afup.org/assets/afup/afup-logo-full-color.svg"
+      },
+      "email": "lettreouverte@afup.org",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "press",
+          "email": "lettreouverte@afup.org",
+          "availableLanguage": [
+            "fr"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "signature de la lettre ouverte",
+          "email": "lettreouverte@afup.org",
+          "availableLanguage": [
+            "fr"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-afpy",
+      "name": "AFPY",
+      "url": "https://www.pycon.fr/2026/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/afpy.svg"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-agile-tour-strasbourg",
+      "name": "Agile Tour Strasbourg",
+      "url": "https://agilestrasbourg.fr/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/agile-tour-strasbourg.png"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-bdx-i-o",
+      "name": "BDX I/O",
+      "url": "https://bdxio.fr/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/bdx-io.png"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-cloud-nord",
+      "name": "Cloud Nord",
+      "url": "https://cloudnord.fr/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/cloud-nord.png"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-communaute-laravel-france",
+      "name": "Communauté Laravel France",
+      "url": "https://laravel-france.com/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/laravel-france.png"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-communaute-symfony",
+      "name": "Communauté Symfony",
+      "url": "https://symfony.com/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/symfony.svg"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-dev-with-ai",
+      "name": "Dev With AI",
+      "url": "https://devw.ai/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/dev-with-ai.png"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-devlille",
+      "name": "DevLille",
+      "url": "https://devlille.fr/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/devlille.svg"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-devquest",
+      "name": "DevQuest",
+      "url": "https://www.devquest.fr/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/devquest.svg"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-lavajug",
+      "name": "LavaJUG",
+      "url": "https://www.lavajug.org/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/lavajug.png"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-lyonjs",
+      "name": "LyonJS",
+      "url": "https://www.lyonjs.org/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/lyonjs.svg"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-mixit",
+      "name": "Mixit",
+      "url": "https://mixitconf.org/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/mixit.svg"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-opengento",
+      "name": "OpenGento",
+      "url": "https://opengento.fr/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/opengento.svg"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-paris-web",
+      "name": "Paris Web",
+      "url": "https://www.paris-web.fr/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/paris-web.svg"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-php-foundation",
+      "name": "PHP Foundation",
+      "url": "https://thephp.foundation/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/php-foundation.png"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-python-lyon",
+      "name": "Python Lyon",
+      "url": "https://www.meetup.com/fr-fr/python-afpy-lyon/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/python-lyon.png"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-react-native-connection",
+      "name": "React Native Connection",
+      "url": "https://reactnativeconnection.io/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/react-native-connection.png"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-snowcamp",
+      "name": "SnowCamp",
+      "url": "https://snowcamp.io/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/snowcamp.png"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-sunny-tech",
+      "name": "Sunny Tech",
+      "url": "https://sunny-tech.io/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/sunny-tech.svg"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-swift-connection",
+      "name": "Swift Connection",
+      "url": "https://swiftconnection.io/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/swift-connection.png"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-sylius-party",
+      "name": "Sylius Party",
+      "url": "https://syliusparty.emagma.fr/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/sylius-party.svg"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-tech-work",
+      "name": "Tech’Work",
+      "url": "https://techwork.events/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/techwork.png"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-volcamp",
+      "name": "Volcamp",
+      "url": "https://www.volcamp.io/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/volcamp.svg"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-web-days-aix-en-provence",
+      "name": "Web Days — Aix-en-Provence",
+      "url": "https://webdays.events/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/web-days.png"
+    }
+  ]
+}</script>
 
 </body>
 </html>

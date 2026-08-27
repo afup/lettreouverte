@@ -1,0 +1,150 @@
+Logos des organisations signataires - correspondance fichier publie <-> fichier source
+Source : repertoire "LOGOS - lettre ouverte" (non versionne, cf. .gitignore)
+Cible  : 2x de la boite d'affichage, soit 260x72 px max pour le matriciel.
+Les SVG sont copies tels quels, attributs width/height retires pour que le
+ratio du viewBox pilote le dimensionnement CSS.
+====================================================================================================
+
+afpy.svg
+  organisation : AFPY
+  source       : LOGOS - lettre ouverte/AFPy/AFPy.svg
+  traitement   : vectoriel (viewBox 0 0 2000 2000)  (4947 o)
+  choix        : vectoriel, seule variante
+
+agile-tour-strasbourg.png
+  organisation : Agile Tour Strasbourg
+  source       : LOGOS - lettre ouverte/Agile Tour Strabourg/Capture d'écran 2026-08-21 110933.png
+  traitement   : 253x260 -> 70x72  (5448 o)
+  choix        : seule variante (capture d'écran)
+
+bdx-io.png
+  organisation : BDX I/O
+  source       : LOGOS - lettre ouverte/BDX I O/logo-couleur.png
+  traitement   : 2296x827 -> 200x72  (11196 o)
+  choix        : version couleur, moins lourde visuellement que le pave noir
+
+cloud-nord.png
+  organisation : Cloud Nord
+  source       : LOGOS - lettre ouverte/Cloudnord/cloudnord.jpg
+  traitement   : 240x258 -> 67x72  (7892 o)
+  choix        : seule variante, fond blanc compatible avec la plaque
+
+laravel-france.png
+  organisation : Communaute Laravel France
+  source       : LOGOS - lettre ouverte/Laravel France/Logo_LF.png
+  traitement   : 2400x2400 -> 72x72  (5446 o)
+  choix        : version couleur (la variante _blanc est prevue pour fond sombre)
+
+symfony.svg
+  organisation : Communaute Symfony
+  source       : LOGOS - lettre ouverte/Symfony/symfony-framework-logo.svg
+  traitement   : vectoriel (viewBox 0 0 260 66)  (4585 o)
+  choix        : vectoriel horizontal, meilleur ratio que la version carree
+
+dev-with-ai.png
+  organisation : Dev With AI
+  source       : LOGOS - lettre ouverte/Dev With AI/Conference.png
+  traitement   : 3117x600 -> 260x50  (9903 o)
+  choix        : seule variante
+
+devlille.svg
+  organisation : DevLille
+  source       : LOGOS - lettre ouverte/DevLille/logodl.svg
+  traitement   : vectoriel (viewBox 0 0 791.39 611.88)  (3307 o)
+  choix        : vectoriel, seule variante
+
+devquest.svg
+  organisation : DevQuest
+  source       : LOGOS - lettre ouverte/DevQuest/DQ2026-SansDate-Couleur.svg
+  traitement   : vectoriel (viewBox 0 0 292 320)  (4766 o)
+  choix        : vectoriel couleur, seule variante
+
+lavajug.png
+  organisation : LavaJUG
+  source       : LOGOS - lettre ouverte/LavaJUG/logo_lavajug.png
+  traitement   : 969x615 -> 113x72  (5484 o)
+  choix        : seule variante
+
+lyonjs.svg
+  organisation : LyonJS
+  source       : LOGOS - lettre ouverte/LyonJS/lyon-js.svg
+  traitement   : vectoriel (viewBox 0 0 1281 881)  (15326 o)
+  choix        : icone seule : sur la version 'complet' le mot LYON est blanc, invisible sur la plaque
+
+mixit.svg
+  organisation : Mixit
+  source       : LOGOS - lettre ouverte/Mixit/mxt-icon--inersed.svg
+  traitement   : vectoriel (viewBox 0 0 480 100)  (2253 o)
+  choix        : vectoriel, seule variante ; encre sombre compatible fond clair
+
+paris-web.svg
+  organisation : Paris Web
+  source       : LOGOS - lettre ouverte/Paris Web/paris-web.svg
+  traitement   : vectoriel (viewBox 0 0 135 70)  (3144 o)
+  choix        : vectoriel couleur ; les variantes -blanc sont prevues pour fond sombre
+
+php-foundation.png
+  organisation : PHP Foundation
+  source       : LOGOS - lettre ouverte/PHP Foundation/php_foundation.png
+  traitement   : 1024x1024 -> 72x72  (2548 o)
+  choix        : seule variante
+
+python-lyon.png
+  organisation : Python Lyon
+  source       : LOGOS - lettre ouverte/Python Lyon/python_lyon.jpg
+  traitement   : 370x370 -> 72x72  (7311 o)
+  choix        : seule variante, fond blanc compatible avec la plaque
+
+react-native-connection.png
+  organisation : React Native Connection
+  source       : LOGOS - lettre ouverte/React Native Connection/React Native Connection.png
+  traitement   : 4710x2116 -> 160x72  (9177 o)
+  choix        : seule variante
+
+snowcamp.png
+  organisation : SnowCamp
+  source       : LOGOS - lettre ouverte/SnowCamp/logo-alpes-snow_v2.png
+  traitement   : 968x968 -> 72x72  (6789 o)
+  choix        : seule variante
+
+sunny-tech.svg
+  organisation : Sunny Tech
+  source       : LOGOS - lettre ouverte/Sunny Tech/logo.svg
+  traitement   : vectoriel (viewBox 0 0 1653 1633)  (21047 o)
+  choix        : vectoriel, seule variante
+
+swift-connection.png
+  organisation : Swift Connection
+  source       : LOGOS - lettre ouverte/Swift Connection/Swift Connection.png
+  traitement   : 2355x1058 -> 160x72  (10894 o)
+  choix        : seule variante
+
+sylius-party.svg
+  organisation : Sylius Party
+  source       : LOGOS - lettre ouverte/Sylius Party/logo.Sylius Party.purple.svg
+  traitement   : vectoriel (viewBox 0 0 169.27978 74.424356)  (62824 o)
+  choix        : vectoriel couleur, seule variante
+
+techwork.png
+  organisation : Tech'Work
+  source       : LOGOS - lettre ouverte/Tech'Work/techwork.jpg
+  traitement   : 500x500 -> 72x72  (5353 o)
+  choix        : seule variante, fond blanc compatible avec la plaque
+
+volcamp.svg
+  organisation : Volcamp
+  source       : LOGOS - lettre ouverte/Volcamp/logovolcamp.svg
+  traitement   : vectoriel (viewBox 0 0 422.4 383.7)  (11314 o)
+  choix        : vectoriel, seule variante
+
+web-days.png
+  organisation : Web Days - Aix-en-Provence
+  source       : LOGOS - lettre ouverte/Web Days - Aix Marseille/Web Days - Logo horizontal.png
+  traitement   : 985x260 -> 260x69  (16128 o)
+  choix        : version horizontale (meilleur ratio) ; le SVG equivalent pese 317 Ko
+
+opengento.svg
+  organisation : OpenGento
+  source       : https://opengento.fr/images/logo/opengento.svg (telecharge le 2026-08-27)
+  traitement   : vectoriel (viewBox 54.3477 0 701.4727 809.4727)
+  choix        : fourni hors du repertoire LOGOS, recupere directement sur le site officiel
