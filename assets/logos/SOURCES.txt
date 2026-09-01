@@ -148,3 +148,33 @@ opengento.svg
   source       : https://opengento.fr/images/logo/opengento.svg (telecharge le 2026-08-27)
   traitement   : vectoriel (viewBox 54.3477 0 701.4727 809.4727)
   choix        : fourni hors du repertoire LOGOS, recupere directement sur le site officiel
+
+agile-nantes.png
+  organisation : Agile Nantes
+  source       : LOGOS - lettre ouverte/AgileTour Nantais/logo_agilenantes_400 (1).png
+  traitement   : 400x400 -> 72x72  (7472 o)
+  choix        : seule variante
+
+breizhcamp.svg
+  organisation : BreizhCamp
+  source       : LOGOS - lettre ouverte/BreizhCamp/breizhcamp-logo-2026.svg
+  traitement   : vectoriel (0 0 945.496 280.459)  (10186 o)
+  choix        : vectoriel (10 Ko) plutot que le PNG equivalent (58 Ko)
+
+cloud-native-provence.png
+  organisation : Cloud Native Provence
+  source       : LOGOS - lettre ouverte/Cloud Native Provence/logo-kcd-provence-primary.CKseOUZQ_9x5v8.svg
+  traitement   : SVG conteneur (4 PNG base64, 512 Ko) -> recadre sur le dessin puis rasterise en 52x72  (7463 o)
+  choix        : le fichier .svg n'est pas du vectoriel : il embarque 4 images matricielles et pese 512 Ko, soit plus que toutes les fontes du site reunies
+
+cto-de-lyon.png
+  organisation : CTO de Lyon
+  source       : LOGOS - lettre ouverte/CTO de Lyon/logo.png
+  traitement   : 500x500 -> 72x72  (9427 o)
+  choix        : seule variante
+
+drupal-france.png
+  organisation : Drupal France
+  source       : LOGOS - lettre ouverte/Drupal France et francophonie/LOGO_DFR_NL2023.jpg
+  traitement   : 2769x1115 -> 179x72  (9798 o)
+  choix        : variante contrastee ; LOGO_BLEU.png est un bleu tres clair, illisible sur la plaque blanche
