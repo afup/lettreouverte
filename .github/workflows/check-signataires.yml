@@ -30,9 +30,13 @@ jobs:
       - name: Récupérer la branche de base
         uses: actions/checkout@v4
         with:
-          # Le commit de base exact de la PR : fournit à la fois l'index.html de
-          # référence et le script de vérification, tous deux en version de confiance.
-          ref: ${{ github.event.pull_request.base.sha }}
+          # La pointe de la branche cible, et non `base.sha` (le commit dont la PR
+          # est partie). Deux raisons : `base.sha` peut être antérieur à l'ajout de
+          # ce script, qui serait alors introuvable ; et la question posée est
+          # « qu'ajoute cette PR par rapport à ce qui est sur la cible aujourd'hui ? »,
+          # ce qui évite de re-signaler un signataire déjà fusionné entre-temps.
+          # Cette référence reste de confiance : c'est la branche cible, pas la PR.
+          ref: ${{ github.event.pull_request.base.ref }}
 
       - name: Extraire l'index.html de la PR
         env:
