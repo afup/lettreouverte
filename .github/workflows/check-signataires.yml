@@ -1,0 +1,95 @@
+name: Vérification des signataires
+
+# `pull_request_target` et non `pull_request` : le dépôt est public, les ajouts de
+# signataires arriveront donc majoritairement depuis des forks. Sur `pull_request`,
+# le GITHUB_TOKEN d'une PR issue d'un fork est en lecture seule et le commentaire
+# ne pourrait pas être publié — exactement le cas que ce job doit couvrir.
+#
+# Le risque habituel de `pull_request_target` est d'exécuter du code venant de la PR
+# avec un token privilégié. Ce n'est pas le cas ici : on checkout la base, le script
+# de vérification vient donc de la branche cible (donc revu et fusionné), et le
+# contenu de la PR n'est jamais qu'une donnée lue via `git show`. Aucune étape
+# n'installe de dépendance ni n'exécute quoi que ce soit provenant de la PR.
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: check-signataires-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  verifier:
+    name: Checklist ajout de signataire
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer la branche de base
+        uses: actions/checkout@v4
+        with:
+          # Le commit de base exact de la PR : fournit à la fois l'index.html de
+          # référence et le script de vérification, tous deux en version de confiance.
+          ref: ${{ github.event.pull_request.base.sha }}
+
+      - name: Extraire l'index.html de la PR
+        env:
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          set -euo pipefail
+          git fetch --no-tags --depth=1 origin "+refs/pull/${PR}/head:refs/remotes/pr/head"
+          # Lecture seule : le contenu de la PR ne sert que de donnée d'entrée.
+          git show refs/remotes/pr/head:index.html > head-index.html 2>/dev/null \
+            || : > head-index.html
+
+      - name: Lister les fichiers modifiés par la PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          set -euo pipefail
+          gh api --paginate "repos/${REPO}/pulls/${PR}/files" \
+            --jq '.[].filename' > fichiers-modifies.txt
+          echo "$(wc -l < fichiers-modifies.txt) fichier(s) modifié(s)"
+
+      - name: Construire la checklist
+        id: checklist
+        run: |
+          set -euo pipefail
+          python3 .github/scripts/check_signataires.py \
+            --base index.html \
+            --head head-index.html \
+            --changed-files fichiers-modifies.txt \
+            --out commentaire.md | tee rapport.txt
+          {
+            echo "### Vérification des signataires"
+            echo
+            cat rapport.txt
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Publier la checklist en commentaire
+        # Le job doit rester non bloquant : si la publication échoue, la checklist
+        # reste consultable dans le résumé du job.
+        continue-on-error: true
+        if: steps.checklist.outputs.nouveau_signataire == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          PR: ${{ github.event.pull_request.number }}
+          MARQUEUR: "<!-- lettre-ouverte:check-signataires -->"
+        run: |
+          set -euo pipefail
+          # Un seul commentaire par PR, mis à jour à chaque push plutôt qu'empilé.
+          ID=$(gh api --paginate "repos/${REPO}/issues/${PR}/comments" \
+                 --jq ".[] | select(.body | startswith(\"${MARQUEUR}\")) | .id" \
+               | head -n 1)
+          if [ -n "${ID}" ]; then
+            gh api -X PATCH "repos/${REPO}/issues/comments/${ID}" -F body=@commentaire.md >/dev/null
+            echo "Commentaire ${ID} mis à jour."
+          else
+            gh api -X POST "repos/${REPO}/issues/${PR}/comments" -F body=@commentaire.md >/dev/null
+            echo "Commentaire créé."
+          fi
