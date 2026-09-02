@@ -1,0 +1,15 @@
+Roboto, Roboto Condensed et Roboto Mono
+Copyright Google LLC — distribués sous Apache License, Version 2.0
+https://www.apache.org/licenses/LICENSE-2.0
+
+Fichiers .woff2 récupérés le 2026-08-27 depuis l'API Google Fonts
+(https://fonts.googleapis.com/css2), puis hébergés sur ce domaine afin de
+ne plus émettre de requête vers un tiers depuis le navigateur des visiteurs.
+
+Seuls les sous-ensembles « latin » et « latin-ext » sont conservés ; les
+sous-ensembles cyrillic, greek, vietnamese, math et symbols ont été écartés,
+la page n'en utilisant aucun caractère. La déclaration unicode-range de chaque
+@font-face reste celle fournie par Google.
+
+Roboto et Roboto Mono sont des polices variables : un seul fichier par
+sous-ensemble couvre toutes les graisses utilisées.
