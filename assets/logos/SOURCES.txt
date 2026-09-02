@@ -178,3 +178,15 @@ drupal-france.png
   source       : LOGOS - lettre ouverte/Drupal France et francophonie/LOGO_DFR_NL2023.jpg
   traitement   : 2769x1115 -> 179x72  (9798 o)
   choix        : variante contrastee ; LOGO_BLEU.png est un bleu tres clair, illisible sur la plaque blanche
+
+alpescraft.png
+  organisation : AlpesCraft
+  source       : LOGOS - lettre ouverte/AlpesCraft/01-AlpesCraft_Couleurs-XL.png
+  traitement   : 1024x1024 -> 72x72  (10197 o)
+  choix        : variante XL (1024px), source la plus definie pour le reduction
+
+riviera-dev.svg
+  organisation : Riviera Dev
+  source       : LOGOS - lettre ouverte/Riviera DEV/Riviera_Dev_Logo_Principal_Bleu_Anthracite.svg
+  traitement   : vectoriel (0 0 1807.17 1075.52)  (31141 o)
+  choix        : variante Bleu Anthracite ; la variante Beige est trop claire, illisible sur la plaque blanche
