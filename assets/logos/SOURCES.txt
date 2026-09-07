@@ -190,3 +190,9 @@ riviera-dev.svg
   source       : LOGOS - lettre ouverte/Riviera DEV/Riviera_Dev_Logo_Principal_Bleu_Anthracite.svg
   traitement   : vectoriel (0 0 1807.17 1075.52)  (31141 o)
   choix        : variante Bleu Anthracite ; la variante Beige est trop claire, illisible sur la plaque blanche
+
+humantalks.png
+  organisation : Human Talks
+  source       : logo fourni directement (500x500, hors repertoire "LOGOS - lettre ouverte")
+  traitement   : 500x500 -> 72x72  (6562 o)
+  choix        : seule variante, fond aubergine assumee (le lettrage est blanc)
