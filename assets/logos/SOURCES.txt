@@ -202,3 +202,27 @@ nord-agile.png
   source       : LOGOS - lettre ouverte/Nord Agile/Nord-Agile-logo-Couleur-portrait-H.jpg
   traitement   : 1048x992 -> 76x72, palette 128 couleurs  (3868 o)
   choix        : seule variante, fond blanc compatible avec la plaque
+
+hacoeur.png
+  organisation : Hacoeur - Humain au coeur
+  source       : LOGOS - lettre ouverte/Hacoeur - Humain au coeur/logo-H@coeur-512.png
+  traitement   : 512x512 -> 72x72, palette 128 couleurs  (3081 o)
+  choix        : seule variante, fond vert assume (le dessin est blanc)
+
+keikenchiba.png
+  organisation : Keikenchiba
+  source       : LOGOS - lettre ouverte/Keikenchiba/Keikenchiba-2.png
+  traitement   : 1024x1024 -> 72x72, palette 128 couleurs  (3533 o)
+  choix        : seule variante, illustration pleine page conservee telle quelle
+
+paug.png
+  organisation : Paris Android User Group
+  source       : LOGOS - lettre ouverte/PAUG/paug-square.png
+  traitement   : 1024x812 RGBA aplati sur blanc, recadre sur le dessin -> 89x72  (3448 o)
+  choix        : seule variante
+
+yeeso.png
+  organisation : Yeeso
+  source       : LOGOS - lettre ouverte/Yeeso/Logo principal - Sans baseline.png
+  traitement   : 2000x2000 RGBA aplati sur blanc, recadre sur le mot -> 248x72, palette 64  (4331 o)
+  choix        : variante sans baseline ; avec la baseline, la signature devient illisible a cette taille
