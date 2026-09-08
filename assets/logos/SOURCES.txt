@@ -196,3 +196,9 @@ humantalks.png
   source       : logo fourni directement (500x500, hors repertoire "LOGOS - lettre ouverte")
   traitement   : 500x500 -> 72x72  (6562 o)
   choix        : seule variante, fond aubergine assumee (le lettrage est blanc)
+
+nord-agile.png
+  organisation : Nord Agile
+  source       : LOGOS - lettre ouverte/Nord Agile/Nord-Agile-logo-Couleur-portrait-H.jpg
+  traitement   : 1048x992 -> 76x72, palette 128 couleurs  (3868 o)
+  choix        : seule variante, fond blanc compatible avec la plaque
