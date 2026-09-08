@@ -226,3 +226,9 @@ yeeso.png
   source       : LOGOS - lettre ouverte/Yeeso/Logo principal - Sans baseline.png
   traitement   : 2000x2000 RGBA aplati sur blanc, recadre sur le mot -> 248x72, palette 64  (4331 o)
   choix        : variante sans baseline ; avec la baseline, la signature devient illisible a cette taille
+
+fepsem.png
+  organisation : FePSeM
+  source       : LOGOS - lettre ouverte/FePSeM/Logo-FePSeM-Baseline-1024x236.png
+  traitement   : 1024x236 -> 260x60, palette 256 couleurs  (4032 o)
+  choix        : seule variante, version avec baseline
