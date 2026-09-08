@@ -225,10 +225,31 @@ p a:not(.logo):hover,.footer__nav a:hover{color:var(--orange-hover);border-botto
 }
 .sig__mark{height:56px;display:flex;align-items:center;justify-content:center}
 .sig__logo{
+  position:relative;
   display:flex;align-items:center;justify-content:center;
   width:150px;height:52px;padding:8px 10px;border-radius:8px;background:var(--paper);
 }
 .sig__logo img{display:block;width:auto;height:auto;max-height:36px;max-width:130px}
+/* Étoile signalant une arrivée récente : à retirer du bloc .sig concerné
+   lorsque la signature n'est plus une nouveauté. Le corps du texte est calé
+   pour tenir dans le creux de l'étoile, entre deux branches opposées. */
+.sig__new{
+  position:absolute;top:-12px;right:-12px;width:38px;height:38px;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--orange);color:#fff;
+  font-family:var(--font-mono);font-weight:700;font-size:10px;letter-spacing:.02em;
+  text-transform:lowercase;line-height:1;
+  clip-path:polygon(
+    50% 0%,59.6% 14.3%,75% 6.7%,76.2% 23.8%,
+    93.3% 25%,85.7% 40.4%,100% 50%,85.7% 59.6%,
+    93.3% 75%,76.2% 76.2%,75% 93.3%,59.6% 85.7%,
+    50% 100%,40.4% 85.7%,25% 93.3%,23.8% 76.2%,
+    6.7% 75%,14.3% 59.6%,0% 50%,14.3% 40.4%,
+    6.7% 25%,23.8% 23.8%,25% 6.7%,40.4% 14.3%);
+}
+/* Le mot est porté par un élément propre : faire pivoter le badge lui-même
+   inclinerait aussi l'étoile. */
+.sig__new span{display:block;transform:rotate(45deg)}
 /* Repli lorsqu'une organisation n'a pas de logo. Aucun cas actuellement,
    mais le CI vérifie ce point : ne pas supprimer. */
 .sig__initials{
@@ -385,7 +406,7 @@ p a:not(.logo):hover,.footer__nav a:hover{color:var(--orange-hover);border-botto
   <div class="rule signatories__head">
     <div>
       <span class="eyebrow">Signataires</span>
-      <h2 id="signataires-titre"><span class="signatories__count">33</span> organisations ont déjà signé</h2>
+      <h2 id="signataires-titre"><span class="signatories__count">34</span> organisations ont déjà signé</h2>
     </div>
     <p class="signatories__invite">Votre organisation veut apparaître ici&nbsp;? Écrivez-nous à <a href="mailto:lettreouverte@afup.org">lettreouverte@afup.org</a>.</p>
   </div>
@@ -411,6 +432,7 @@ p a:not(.logo):hover,.footer__nav a:hover{color:var(--orange-hover);border-botto
     <li class="sig"><a class="sig__inner" href="https://www.lavajug.org/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/lavajug.png" alt="Logo de LavaJUG" loading="lazy" decoding="async"></span></span><span class="sig__name">LavaJUG</span></a></li>
     <li class="sig"><a class="sig__inner" href="https://www.lyonjs.org/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/lyonjs.svg" alt="Logo de LyonJS" loading="lazy" decoding="async"></span></span><span class="sig__name">LyonJS</span></a></li>
     <li class="sig"><a class="sig__inner" href="https://mixitconf.org/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/mixit.svg" alt="Logo de Mixit" loading="lazy" decoding="async"></span></span><span class="sig__name">Mixit</span></a></li>
+    <li class="sig"><a class="sig__inner" href="https://nord-agile.org/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/nord-agile.png" alt="Logo de Nord Agile" loading="lazy" decoding="async"><span class="sig__new" title="Nouveau signataire"><span>new</span></span></span></span><span class="sig__name">Nord Agile</span></a></li>
     <li class="sig"><a class="sig__inner" href="https://opengento.fr/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/opengento.svg" alt="Logo d’OpenGento" loading="lazy" decoding="async"></span></span><span class="sig__name">OpenGento</span></a></li>
     <li class="sig"><a class="sig__inner" href="https://www.paris-web.fr/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/paris-web.svg" alt="Logo de Paris Web" loading="lazy" decoding="async"></span></span><span class="sig__name">Paris Web</span></a></li>
     <li class="sig"><a class="sig__inner" href="https://thephp.foundation/" target="_blank" rel="noopener"><span class="sig__mark"><span class="sig__logo"><img src="assets/logos/php-foundation.png" alt="Logo de PHP Foundation" loading="lazy" decoding="async"></span></span><span class="sig__name">PHP Foundation</span></a></li>
@@ -560,7 +582,7 @@ p a:not(.logo):hover,.footer__nav a:hover{color:var(--orange-hover);border-botto
       "description": "Les événements techniques français traversent une crise silencieuse. Sponsorisez, achetez des places, adhérez : trois gestes pour qu’ils continuent d’exister.",
       "inLanguage": "fr-FR",
       "datePublished": "2026-09-02T08:00:00+02:00",
-      "dateModified": "2026-09-07T12:00:00+02:00",
+      "dateModified": "2026-09-08T12:00:00+02:00",
       "isAccessibleForFree": true,
       "mainEntityOfPage": {
         "@id": "https://lettreouverte.afup.org/#webpage"
@@ -610,6 +632,9 @@ p a:not(.logo):hover,.footer__nav a:hover{color:var(--orange-hover);border-botto
         },
         {
           "@id": "https://lettreouverte.afup.org/#org-mixit"
+        },
+        {
+          "@id": "https://lettreouverte.afup.org/#org-nord-agile"
         },
         {
           "@id": "https://lettreouverte.afup.org/#org-opengento"
@@ -824,6 +849,13 @@ p a:not(.logo):hover,.footer__nav a:hover{color:var(--orange-hover);border-botto
       "name": "Mixit",
       "url": "https://mixitconf.org/",
       "logo": "https://lettreouverte.afup.org/assets/logos/mixit.svg"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lettreouverte.afup.org/#org-nord-agile",
+      "name": "Nord Agile",
+      "url": "https://nord-agile.org/",
+      "logo": "https://lettreouverte.afup.org/assets/logos/nord-agile.png"
     },
     {
       "@type": "Organization",
