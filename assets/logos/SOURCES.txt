@@ -257,3 +257,9 @@ okiwi.png
   source       : LOGOS - lettre ouverte/Okiwi/logo.png
   traitement   : 490x337 RGBA aplati sur blanc, recadre sur le dessin -> 115x72, palette 128 couleurs  (3438 o)
   choix        : seule variante, pictogramme sans lettrage
+
+friends-of-presta.png
+  organisation : Friends of Presta
+  source       : LOGOS - lettre ouverte/Friends Of Presta/logo-fop.png
+  traitement   : 584x342 recadre sur le lettrage -> 123x72, palette 64 couleurs  (3345 o)
+  choix        : seule variante, lettrage sur deux lignes
