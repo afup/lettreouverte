@@ -232,3 +232,34 @@ fepsem.png
   source       : LOGOS - lettre ouverte/FePSeM/Logo-FePSeM-Baseline-1024x236.png
   traitement   : 1024x236 -> 260x60, palette 256 couleurs  (4032 o)
   choix        : seule variante, version avec baseline
+
+bretzel-craft.png
+  organisation : Bretzel Craft
+  source       : LOGOS - lettre ouverte/BretzelCraft/Logo_bretzel-craft.webp
+  traitement   : 267x267 RGBA aplati sur blanc -> 75x72, palette 128 couleurs  (3545 o)
+  choix        : seule variante, pastille bleu clair assumee
+
+alpesjug.png
+  organisation : AlpesJUG
+  source       : LOGOS - lettre ouverte/AlpesJUG/alpesjug_logo.png
+  traitement   : 128x128 RGBA aplati sur blanc, recadre sur le dessin -> 65x72, palette 128 couleurs  (2766 o)
+  choix        : seule variante ; source deja tres petite, pas de version plus large disponible
+  remarque     : aucune URL renseignee, le site officiel est actuellement deface
+
+chtitedev.png
+  organisation : Chtitedev
+  source       : LOGOS - lettre ouverte/ChtiteDev/chtitev-new-logo-2.png
+  traitement   : 509x197 RGBA aplati sur blanc -> 189x72, palette 128 couleurs  (4070 o)
+  choix        : variante horizontale ; la variante verticale (logo-1) rend le lettrage illisible a cette hauteur
+
+okiwi.png
+  organisation : Okiwi
+  source       : LOGOS - lettre ouverte/Okiwi/logo.png
+  traitement   : 490x337 RGBA aplati sur blanc, recadre sur le dessin -> 115x72, palette 128 couleurs  (3438 o)
+  choix        : seule variante, pictogramme sans lettrage
+
+friends-of-presta.png
+  organisation : Friends of Presta
+  source       : LOGOS - lettre ouverte/Friends Of Presta/logo-fop.png
+  traitement   : 584x342 recadre sur le lettrage -> 123x72, palette 64 couleurs  (3345 o)
+  choix        : seule variante, lettrage sur deux lignes
