@@ -263,3 +263,17 @@ friends-of-presta.png
   source       : LOGOS - lettre ouverte/Friends Of Presta/logo-fop.png
   traitement   : 584x342 recadre sur le lettrage -> 123x72, palette 64 couleurs  (3345 o)
   choix        : seule variante, lettrage sur deux lignes
+
+next.png
+  organisation : Next (media)
+  source       : fournie directement
+  traitement   : aucun, 242x76 RGBA conservee telle quelle  (6018 o)
+  choix        : logo de presse, affiche dans la plaque .press__logo (max-height 28px)
+
+zdnet.svg
+  organisation : ZDNET (media)
+  source       : https://www.zdnet.fr/wp-content/themes/cnet-zdnet/zdnet/assets/images/icons/svg/zdnet-logo--midnght-horizontal.svg
+  traitement   : aucun, SVG conserve tel quel (2666x523, fill #080a12, 1306 o)
+  choix        : variante horizontale ; la variante verticale du site n'a pas de fill
+                 explicite et le logo declare dans le JSON-LD de ZDNET est une tuile
+                 carree sur fond sombre, inadaptee a la plaque blanche

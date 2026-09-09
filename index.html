@@ -277,12 +277,15 @@ p a:not(.logo):hover,.footer__nav a:hover{color:var(--orange-hover);border-botto
   color:var(--paper);transition:background-color 160ms var(--ease);
 }
 .press__card:hover{background:var(--veil-hover)}
+/* Le repli textuel (nom du média en capitales) reste utilisable pour un média
+   dont on n'a pas le logo : il suffit d'écrire le nom au lieu d'une image. */
 .press__logo{
   display:flex;align-items:center;justify-content:center;height:44px;width:120px;
-  border-radius:8px;background:var(--paper);color:#9a9eb8;
+  padding:6px 10px;border-radius:8px;background:var(--paper);color:#9a9eb8;
   font-family:var(--font-cond);font-weight:700;font-size:12px;
   letter-spacing:.14em;text-transform:uppercase;
 }
+.press__logo img{display:block;width:auto;height:auto;max-height:28px;max-width:100px}
 .press__meta{font-family:var(--font-mono);font-size:13px;color:var(--text-faint)}
 .press__title{font-weight:700;font-size:17px;line-height:1.35}
 .press__desc{font-size:15px;line-height:1.6;color:var(--text-dim)}
@@ -459,6 +462,11 @@ p a:not(.logo):hover,.footer__nav a:hover{color:var(--orange-hover);border-botto
   </ul>
 </section>
 <!--
+  Revue de presse — une carte .press__card par retombée, de la plus récente à
+  la plus ancienne. La plaque .press__logo accueille le logo du média ; à
+  défaut, y écrire son nom, le repli textuel est prévu par le CSS.
+  Ne référencer que des articles publiés, avec leur titre exact.
+-->
 <section class="wrap press-section" id="presse" aria-labelledby="presse-titre">
   <div class="rule">
     <span class="eyebrow">Presse</span>
@@ -467,31 +475,23 @@ p a:not(.logo):hover,.footer__nav a:hover{color:var(--orange-hover);border-botto
       <p class="press__contact">Vous couvrez le sujet ou vous souhaitez nous interviewer&nbsp;: <a href="mailto:lettreouverte@afup.org">lettreouverte@afup.org</a>.</p>
     </div>
     <div class="press">
-      <a class="press__card" href="#">
-        <span class="press__logo">Logo</span>
-        <span class="press__meta">Média — jj.mm.2026</span>
-        <span class="press__title">Titre de l’article ou de l’émission</span>
-        <span class="press__desc">Une phrase de contexte sur l’angle retenu.</span>
+      <a class="press__card" href="https://www.zdnet.fr/actualites/conferences-developpeurs-les-organisateurs-tirent-la-sonnette-dalarme-503077.htm" target="_blank" rel="noopener">
+        <span class="press__logo"><img src="assets/logos/zdnet.svg" alt="Logo de ZDNET" loading="lazy" decoding="async"></span>
+        <span class="press__meta">ZDNET — 09.09.2026</span>
+        <span class="press__title">Conférences développeurs&nbsp;: les organisateurs tirent la sonnette d’alarme</span>
+        <span class="press__desc">Louis Adam détaille la difficulté croissante des conférences à trouver leur équilibre, et l’appel de l’AFUP et d’une trentaine d’associations à soutenir l’écosystème.</span>
         <span class="press__cta">Lire →</span>
       </a>
-      <a class="press__card" href="#">
-        <span class="press__logo">Logo</span>
-        <span class="press__meta">Média — jj.mm.2026</span>
-        <span class="press__title">Titre de l’article ou du podcast</span>
-        <span class="press__desc">Une phrase de contexte sur l’angle retenu.</span>
-        <span class="press__cta">Écouter →</span>
-      </a>
-      <a class="press__card" href="#">
-        <span class="press__logo">Logo</span>
-        <span class="press__meta">Média — jj.mm.2026</span>
-        <span class="press__title">Titre de la reprise</span>
-        <span class="press__desc">Une phrase de contexte sur l’angle retenu.</span>
+      <a class="press__card" href="https://next.ink/255239/les-conferences-developpeurs-appellent-les-entreprises-a-ne-pas-les-laisser-disparaitre/" target="_blank" rel="noopener">
+        <span class="press__logo"><img src="assets/logos/next.png" alt="Logo de Next" loading="lazy" decoding="async"></span>
+        <span class="press__meta">Next — 08.09.2026</span>
+        <span class="press__title">Les conférences développeurs appellent les entreprises à ne pas les laisser disparaitre</span>
+        <span class="press__desc">Alexandre Laurent revient sur l’appel collectif des associations signataires et sur la baisse conjointe du sponsoring et de la billetterie qui menace leurs événements.</span>
         <span class="press__cta">Lire →</span>
       </a>
     </div>
   </div>
 </section>
--->
 
 <section class="wrap share-section" aria-labelledby="relayer-titre">
   <div class="rule share">
@@ -530,6 +530,7 @@ p a:not(.logo):hover,.footer__nav a:hover{color:var(--orange-hover);border-botto
     <nav class="footer__nav" aria-label="Pied de page">
       <a href="#lettre">La lettre</a>
       <a href="#signataires">Signataires</a>
+      <a href="#presse">Presse</a>
       <a href="mailto:lettreouverte@afup.org">Contact</a>
     </nav>
     <p class="footer__credit">Une initiative proposée par l’<a class="logo" href="https://afup.org" target="_blank" rel="noopener"><img src="assets/afup/afup-icon.svg" alt="AFUP" width="265" height="90"></a></p>
@@ -592,7 +593,7 @@ p a:not(.logo):hover,.footer__nav a:hover{color:var(--orange-hover);border-botto
       "description": "Les événements techniques français traversent une crise silencieuse. Sponsorisez, achetez des places, adhérez : trois gestes pour qu’ils continuent d’exister.",
       "inLanguage": "fr-FR",
       "datePublished": "2026-09-02T08:00:00+02:00",
-      "dateModified": "2026-09-09T21:00:00+02:00",
+      "dateModified": "2026-09-09T23:30:00+02:00",
       "isAccessibleForFree": true,
       "mainEntityOfPage": {
         "@id": "https://lettreouverte.afup.org/#webpage"
@@ -603,6 +604,40 @@ p a:not(.logo):hover,.footer__nav a:hover{color:var(--orange-hover);border-botto
       "publisher": {
         "@id": "https://afup.org/#organization"
       },
+      "subjectOf": [
+        {
+          "@type": "NewsArticle",
+          "headline": "Conférences développeurs : les organisateurs tirent la sonnette d’alarme",
+          "url": "https://www.zdnet.fr/actualites/conferences-developpeurs-les-organisateurs-tirent-la-sonnette-dalarme-503077.htm",
+          "datePublished": "2026-09-09",
+          "inLanguage": "fr-FR",
+          "author": {
+            "@type": "Person",
+            "name": "Louis Adam"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "ZDNET",
+            "url": "https://www.zdnet.fr/"
+          }
+        },
+        {
+          "@type": "NewsArticle",
+          "headline": "Les conférences développeurs appellent les entreprises à ne pas les laisser disparaitre",
+          "url": "https://next.ink/255239/les-conferences-developpeurs-appellent-les-entreprises-a-ne-pas-les-laisser-disparaitre/",
+          "datePublished": "2026-09-08",
+          "inLanguage": "fr-FR",
+          "author": {
+            "@type": "Person",
+            "name": "Alexandre Laurent"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Next",
+            "url": "https://next.ink/"
+          }
+        }
+      ],
       "author": [
         {
           "@id": "https://lettreouverte.afup.org/#org-afpy"
