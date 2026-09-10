@@ -244,7 +244,7 @@ alpesjug.png
   source       : LOGOS - lettre ouverte/AlpesJUG/alpesjug_logo.png
   traitement   : 128x128 RGBA aplati sur blanc, recadre sur le dessin -> 65x72, palette 128 couleurs  (2766 o)
   choix        : seule variante ; source deja tres petite, pas de version plus large disponible
-  remarque     : aucune URL renseignee, le site officiel est actuellement deface
+  remarque     : le site officiel est actuellement deface, la carte pointe vers le Meetup
 
 chtitedev.png
   organisation : Chtitedev
@@ -277,3 +277,47 @@ zdnet.svg
   choix        : variante horizontale ; la variante verticale du site n'a pas de fill
                  explicite et le logo declare dans le JSON-LD de ZDNET est une tuile
                  carree sur fond sombre, inadaptee a la plaque blanche
+
+paris-typescript.png
+  organisation : Paris TypeScript
+  source       : LOGOS - lettre ouverte/Paris TypeScript/ParisTypeScript.png
+  traitement   : 1000x1000 RGBA aplati sur blanc -> 72x72, palette 128 couleurs  (2345 o)
+  choix        : seule variante, pastille carree tour Eiffel + monogramme TS
+
+react-paris.png
+  organisation : React.paris
+  source       : LOGOS - lettre ouverte/React Paris/react-paris-500px-logo.webp
+  traitement   : 2084x2084 RGBA aplati sur blanc, recadre sur le dessin -> 67x72, palette 128 couleurs  (2830 o)
+  choix        : seule variante, atome sur tour Eiffel avec le lettrage
+
+agile-tour-bordeaux.png
+  organisation : Agile Tour Bordeaux
+  source       : LOGOS - lettre ouverte/Agile Tour Bordeaux/atbdx.png
+  traitement   : 320x201 RGBA aplati sur blanc, recadre sur le dessin -> 81x72, palette 128 couleurs  (2290 o)
+  choix        : seule variante ; source deja petite, pas de version plus large disponible
+
+socrates-rennes.png
+  organisation : SoCraTes Rennes
+  source       : LOGOS - lettre ouverte/SoCrates Rennes/LogoSocratesRennesSansFond-min.png
+  traitement   : 250x250 RGBA aplati sur blanc, recadre sur le dessin -> 72x72, palette 128 couleurs  (3432 o)
+  choix        : seule variante, version sans fond
+
+mobilis-in-mobile.png
+  organisation : Mobilis In Mobile
+  source       : LOGOS - lettre ouverte/Mobilis in Mobile/mobilis.png
+  traitement   : 200x200 RGB -> 72x72, palette 128 couleurs  (2469 o)
+  choix        : seule variante, monogramme M.M sur aplat bleu
+  remarque     : aucune URL fournie, la carte ne porte donc pas de lien
+
+mongodb-user-group.png
+  organisation : MongoDB User Group
+  source       : LOGOS - lettre ouverte/MongoDB User Group/Logo Green PNG.png
+  traitement   : 1246x547 RGBA aplati sur blanc, recadre sur le lettrage -> 205x72, palette 128 couleurs  (5213 o)
+  choix        : variante verte ; la noire perd la feuille de marque et la blanche disparait sur la plaque
+
+gdg-paris.png
+  organisation : GDG Paris
+  source       : LOGOS - lettre ouverte/GDG Paris/GDG Professional - Horizontal - Light.png
+  traitement   : 1920x390 RGBA aplati sur blanc, recadre sur le lettrage -> 260x30, palette 128 couleurs  (3365 o)
+  choix        : variante horizontale claire ; la stacked, ramenee a 72 px de haut, rend
+                 « Google Developer Group » illisible, la dark est prevue pour fond sombre
