@@ -321,3 +321,22 @@ gdg-paris.png
   traitement   : 1920x390 RGBA aplati sur blanc, recadre sur le lettrage -> 260x30, palette 128 couleurs  (3365 o)
   choix        : variante horizontale claire ; la stacked, ramenee a 72 px de haut, rend
                  « Google Developer Group » illisible, la dark est prevue pour fond sombre
+
+communaute-gitlab-france.png
+  organisation : Communauté GitLab France
+  source       : LOGOS - lettre ouverte/GitLab France/GitLab-France-logo-transparent.png
+  traitement   : 942x265 RGBA aplati sur blanc, recadre sur le dessin -> 256x40, palette 128 couleurs  (3894 o)
+  choix        : seule variante, lockup renard + « Communauté » + drapeau francais
+
+software-craft-lille.png
+  organisation : Software Craft Lille
+  source       : LOGOS - lettre ouverte/Software Craft Lille/SoftwareCraftLille-Logo.png
+  traitement   : 500x500 RGB, disque isole sur blanc -> 72x72, palette 128 couleurs  (3038 o)
+  choix        : seule variante ; l'aplat tan qui entoure le disque est remplace par du
+                 blanc, sinon la carte porterait un carre colore sur la plaque claire
+
+agile-montpellier.png
+  organisation : Agile Montpellier
+  source       : LOGOS - lettre ouverte/Agile Montpellier /Logo-Association-Agile-Montpellier.png
+  traitement   : 1980x1012 RGBA aplati sur blanc, recadre sur le dessin -> 168x72, palette 128 couleurs  (6132 o)
+  choix        : seule variante, spirale orange + lettrage bleu
