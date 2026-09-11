@@ -244,7 +244,7 @@ alpesjug.png
   source       : LOGOS - lettre ouverte/AlpesJUG/alpesjug_logo.png
   traitement   : 128x128 RGBA aplati sur blanc, recadre sur le dessin -> 65x72, palette 128 couleurs  (2766 o)
   choix        : seule variante ; source deja tres petite, pas de version plus large disponible
-  remarque     : le site officiel est actuellement deface, la carte pointe vers le Meetup
+  remarque     : la carte pointe vers le site officiel https://alpesjug.fr/
 
 chtitedev.png
   organisation : Chtitedev
