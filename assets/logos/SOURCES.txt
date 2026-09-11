@@ -340,3 +340,33 @@ agile-montpellier.png
   source       : LOGOS - lettre ouverte/Agile Montpellier /Logo-Association-Agile-Montpellier.png
   traitement   : 1980x1012 RGBA aplati sur blanc, recadre sur le dessin -> 168x72, palette 128 couleurs  (6132 o)
   choix        : seule variante, spirale orange + lettrage bleu
+
+apidays-paris.png
+  organisation : apidays Paris
+  source       : LOGOS - lettre ouverte/FOST/APIDAYS_logo.png
+  traitement   : 2408x705 RGBA aplati sur blanc, recadre sur le dessin -> 246x72, palette 128 couleurs  (5270 o)
+  choix        : seule variante, lettrage bicolore
+
+generationai-paris.png
+  organisation : GenerationAI Paris
+  source       : LOGOS - lettre ouverte/FOST/generation AI conference_Logo.png
+  traitement   : 4084x807 RGBA aplati sur blanc, recadre sur le dessin -> 260x47, palette 128 couleurs  (5376 o)
+  choix        : seule variante, lettrage en degrade + « CONFERENCE »
+
+digital-resilience-europe.png
+  organisation : Digital Resilience Europe
+  source       : LOGOS - lettre ouverte/FOST/Digital_Reilience_logo.png
+  traitement   : 1536x1024 RGB, marges blanches recadrees sur le dessin -> 169x72, palette 128 couleurs  (6318 o)
+  choix        : seule variante, bouclier + lettrage sur trois lignes
+
+contextcon.png
+  organisation : ContextCon
+  source       : LOGOS - lettre ouverte/FOST/COntextCon_logo.png
+  traitement   : 1594x384 RGBA aplati sur blanc, recadre sur le dessin -> 260x53, palette 128 couleurs  (3795 o)
+  choix        : seule variante, cadre de visee + lettrage
+
+cloud-native-ai-summit-paris.png
+  organisation : Cloud Native AI Summit Paris
+  source       : LOGOS - lettre ouverte/FOST/logo-cloudNativeSummit-color-horiz.png
+  traitement   : 342x161 RGBA aplati sur blanc -> 153x72, palette 128 couleurs  (3339 o)
+  choix        : seule variante ; le logo porte « Cloud Native Summit » sans « AI »
