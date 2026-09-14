@@ -396,3 +396,15 @@ duchess-france.png
   source       : LOGOS - lettre ouverte/Duchess France/DUCHESS_logo.png
   traitement   : 636x280 RGBA aplati sur blanc, recadre sur le dessin -> 166x72, palette 128 couleurs  (4273 o)
   choix        : seule variante, mascotte + lettrage sur deux lignes
+
+lyontechhub.png
+  organisation : LyonTechHub
+  source       : LOGOS - lettre ouverte/LyonTechHub/LyonTechHub-600x600.png
+  traitement   : 600x600 RGBA aplati sur blanc, recadre sur le dessin -> 63x72, palette 128 couleurs  (3430 o)
+  choix        : seule variante, pictogramme (tete de lion) sans lettrage
+
+software-crafters-lyon.png
+  organisation : Software Crafters Lyon
+  source       : LOGOS - lettre ouverte/Software Crafters Lyon/SoftwareCraftersLyonLogo.png
+  traitement   : 236x278 RGB (gravure scannee), niveaux 40-229 pour blanchir le fond, recadre sur le dessin -> 52x72, palette 128 couleurs  (2548 o)
+  choix        : seule variante, gravure du forgeron sans lettrage
