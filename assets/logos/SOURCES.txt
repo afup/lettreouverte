@@ -384,3 +384,15 @@ cloud-native-ai-summit-paris.png
   source       : LOGOS - lettre ouverte/FOST/logo-cloudNativeSummit-color-horiz.png
   traitement   : 342x161 RGBA aplati sur blanc -> 153x72, palette 128 couleurs  (3339 o)
   choix        : seule variante ; le logo porte « Cloud Native Summit » sans « AI »
+
+cafe-devops-lyon.png
+  organisation : Café DevOps Lyon
+  source       : LOGOS - lettre ouverte/Café DevOps Lyon/Café_DevOps-Coul_L.png
+  traitement   : 801x402 RGBA entrelace aplati sur blanc, recadre sur le dessin -> 173x72, palette 128 couleurs  (4444 o)
+  choix        : seule variante, verre + lettrage en degrade ; le logo porte « Café devops » sans « Lyon »
+
+duchess-france.png
+  organisation : Duchess France
+  source       : LOGOS - lettre ouverte/Duchess France/DUCHESS_logo.png
+  traitement   : 636x280 RGBA aplati sur blanc, recadre sur le dessin -> 166x72, palette 128 couleurs  (4273 o)
+  choix        : seule variante, mascotte + lettrage sur deux lignes
