@@ -278,6 +278,20 @@ zdnet.svg
                  explicite et le logo declare dans le JSON-LD de ZDNET est une tuile
                  carree sur fond sombre, inadaptee a la plaque blanche
 
+linuxfr.png
+  organisation : LinuxFr.org (media)
+  source       : https://linuxfr.org/images/logos/linuxfr2_classic.png
+  traitement   : 201x186 palette aplati sur blanc, recadre sur le lettrage -> 201x78, puis 185x72  (8204 o)
+  choix        : variante "classic" ; les variantes "plusieur" et "gouttes" ont un fond photo,
+                 et avec les manchots le lettrage devient illisible dans la plaque .press__logo
+
+le-dernier-clic.png
+  organisation : Le Dernier Clic (avant la fin du monde) (podcast)
+  source       : fournie directement (pochette 400x400 du podcast)
+  traitement   : 400x400 RGBA aplati sur blanc, recadre sur le lettrage -> 337x121, puis 200x72  (26390 o)
+  choix        : la pochette entiere est illisible a 28px de haut dans la plaque .press__logo ;
+                 le recadrage ecarte les mains et le cadre rose, garde "(avant la fin du monde)"
+
 paris-typescript.png
   organisation : Paris TypeScript
   source       : LOGOS - lettre ouverte/Paris TypeScript/ParisTypeScript.png
@@ -370,3 +384,15 @@ cloud-native-ai-summit-paris.png
   source       : LOGOS - lettre ouverte/FOST/logo-cloudNativeSummit-color-horiz.png
   traitement   : 342x161 RGBA aplati sur blanc -> 153x72, palette 128 couleurs  (3339 o)
   choix        : seule variante ; le logo porte « Cloud Native Summit » sans « AI »
+
+cafe-devops-lyon.png
+  organisation : Café DevOps Lyon
+  source       : LOGOS - lettre ouverte/Café DevOps Lyon/Café_DevOps-Coul_L.png
+  traitement   : 801x402 RGBA entrelace aplati sur blanc, recadre sur le dessin -> 173x72, palette 128 couleurs  (4444 o)
+  choix        : seule variante, verre + lettrage en degrade ; le logo porte « Café devops » sans « Lyon »
+
+duchess-france.png
+  organisation : Duchess France
+  source       : LOGOS - lettre ouverte/Duchess France/DUCHESS_logo.png
+  traitement   : 636x280 RGBA aplati sur blanc, recadre sur le dessin -> 166x72, palette 128 couleurs  (4273 o)
+  choix        : seule variante, mascotte + lettrage sur deux lignes
