@@ -420,3 +420,9 @@ jsandco.png
   source       : LOGOS - lettre ouverte/JS&Co/jsandco_banner.jpg
   traitement   : 1316x566 RGB -> 167x72, palette 128 couleurs  (4448 o)
   choix        : seule variante, banniere a fond jaune assume (lettrage noir et blanc)
+
+agile-rennes.png
+  organisation : Agile Rennes
+  source       : LOGOS - lettre ouverte/Agile Rennes/Agile Tour RennesLogoSite.png
+  traitement   : 2653x2654 RGBA aplati sur blanc, recadre y 80-1837 (lettrage + mascotte) -> 109x72, palette 128 couleurs  (3679 o)
+  choix        : seule variante (visuel carre) ; silhouette de la ville retiree, illisible a cette taille ; fond bleu assume (le lettrage est blanc)
