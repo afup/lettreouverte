@@ -408,3 +408,15 @@ software-crafters-lyon.png
   source       : LOGOS - lettre ouverte/Software Crafters Lyon/SoftwareCraftersLyonLogo.png
   traitement   : 236x278 RGB (gravure scannee), niveaux 40-229 pour blanchir le fond, recadre sur le dessin -> 52x72, palette 128 couleurs  (2548 o)
   choix        : seule variante, gravure du forgeron sans lettrage
+
+codeurs-en-seine.svg
+  organisation : Codeurs en Seine
+  source       : LOGOS - lettre ouverte/Codeurs En Seine/logo-codeurs-en-seine.svg
+  traitement   : vectoriel (viewBox 0 0 569 320), attributs width/height retires  (7836 o)
+  choix        : vectoriel (8 Ko) plutot que le PNG (28 Ko) ou le JPG (38 Ko) ; fond degrade bleu assume (le lettrage est blanc)
+
+jsandco.png
+  organisation : JS&Co
+  source       : LOGOS - lettre ouverte/JS&Co/jsandco_banner.jpg
+  traitement   : 1316x566 RGB -> 167x72, palette 128 couleurs  (4448 o)
+  choix        : seule variante, banniere a fond jaune assume (lettrage noir et blanc)
