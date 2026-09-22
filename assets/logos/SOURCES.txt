@@ -292,6 +292,15 @@ le-dernier-clic.png
   choix        : la pochette entiere est illisible a 28px de haut dans la plaque .press__logo ;
                  le recadrage ecarte les mains et le cadre rose, garde "(avant la fin du monde)"
 
+maci.png
+  organisation : Message a Caractere Informatique (podcast Clever Cloud)
+  source       : pochette officielle du podcast (Apple Podcasts, 1200x1200)
+                 https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/cf/a7/66/cfa7669d-c9c7-b8da-f180-ef45c70dbd6d/mza_11603045511549757322.jpeg/1200x1200bb.jpg
+  traitement   : 1200x1200 RGB, recadre sur le lettrage (38,292)-(1172,852) -> 1134x560, puis 146x72, palette 128 couleurs  (6929 o)
+  choix        : la pochette entiere est illisible a 28px de haut dans la plaque .press__logo ;
+                 le recadrage ecarte le logo Clever Cloud et garde le titre sur trois lignes ;
+                 la vignette de l'episode #164 (164square.jpg) est un photomontage, encore moins lisible
+
 paris-typescript.png
   organisation : Paris TypeScript
   source       : LOGOS - lettre ouverte/Paris TypeScript/ParisTypeScript.png
