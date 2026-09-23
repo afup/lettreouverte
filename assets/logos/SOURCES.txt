@@ -301,6 +301,13 @@ maci.png
                  le recadrage ecarte le logo Clever Cloud et garde le titre sur trois lignes ;
                  la vignette de l'episode #164 (164square.jpg) est un photomontage, encore moins lisible
 
+jdn.png
+  organisation : JDN - Journal du Net (media)
+  source       : logo d'en-tete de journaldunet.com (class app_logo, 178x66 = 2x de l'affichage 89x33)
+                 https://img-0.journaldunet.com/OfvBXVeIk8rNaCLUZL2UOT46kqQ=/178x66/smart/a914f62b08e24e169c511e4b2f254df0/ccmcms-jdn/39492540.png
+  traitement   : aucun, 178x66 RGBA conservee telle quelle  (1215 o)
+  choix        : lettrage "JDN" sombre sur fond transparent, lisible dans la plaque .press__logo
+
 paris-typescript.png
   organisation : Paris TypeScript
   source       : LOGOS - lettre ouverte/Paris TypeScript/ParisTypeScript.png
