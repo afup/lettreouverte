@@ -442,3 +442,15 @@ agile-rennes.png
   source       : LOGOS - lettre ouverte/Agile Rennes/Agile Tour RennesLogoSite.png
   traitement   : 2653x2654 RGBA aplati sur blanc, recadre y 80-1837 (lettrage + mascotte) -> 109x72, palette 128 couleurs  (3679 o)
   choix        : seule variante (visuel carre) ; silhouette de la ville retiree, illisible a cette taille ; fond bleu assume (le lettrage est blanc)
+
+la-qualisphere.png
+  organisation : La Qualisphere
+  source       : LOGOS - lettre ouverte/La QualiSphere/logo_LaQualiSphere.png
+  traitement   : 1024x1024 RGB, recadre sur le logo (125,330)-(914,674), fond creme blanchi -> 165x72, palette 128 couleurs  (5993 o)
+  choix        : seule variante (visuel carre a fond creme) ; marges retirees
+
+fork-it.png
+  organisation : Fork IT!
+  source       : LOGOS - lettre ouverte/Fork IT/logo.png
+  traitement   : 2000x218 RGBA, lettrage blanc sur transparent aplati sur fond #18181b avec marge -> 419x72, palette 128 couleurs  (4184 o)
+  choix        : seule variante ; fond sombre necessaire (le lettrage est blanc)
