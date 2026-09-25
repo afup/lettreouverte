@@ -454,3 +454,9 @@ fork-it.png
   source       : LOGOS - lettre ouverte/Fork IT/logo.png
   traitement   : 2000x218 RGBA, lettrage blanc sur transparent aplati sur fond #18181b avec marge -> 419x72, palette 128 couleurs  (4184 o)
   choix        : seule variante ; fond sombre necessaire (le lettrage est blanc)
+
+wpfr.svg
+  organisation : Communauté WordPress Francophone
+  source       : LOGOS - lettre ouverte/WordPress Francophone (WPFR)/logo-wpfr-vectoriel.svg
+  traitement   : vectoriel, seuls les 6 traces du monogramme gardes (fond blanc et slogan retires), viewBox recadree 187 141 997 731  (693 o)
+  choix        : vectoriel plutot que le PNG (24 Ko) ; slogan "Le point de rencontre..." retire, illisible a cette taille
