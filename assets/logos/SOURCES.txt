@@ -460,3 +460,15 @@ wpfr.svg
   source       : LOGOS - lettre ouverte/WordPress Francophone (WPFR)/logo-wpfr-vectoriel.svg
   traitement   : vectoriel, seuls les 6 traces du monogramme gardes (fond blanc et slogan retires), viewBox recadree 187 141 997 731  (693 o)
   choix        : vectoriel plutot que le PNG (24 Ko) ; slogan "Le point de rencontre..." retire, illisible a cette taille
+
+matomocamp.svg
+  organisation : MatomoCamp
+  source       : LOGOS - lettre ouverte/MatomoCamp/Matomo_Camp_Logo.svg
+  traitement   : vectoriel repris tel quel (prologue XML et id retires), viewBox 0 0 3054.9 471.65  (5.2 Ko)
+  choix        : vectoriel plutot que le PNG ou le JPG
+
+le-biklab.png
+  organisation : Le Bik'Lab
+  source       : LOGOS - lettre ouverte/Le Bik Lab/logo_lebiklab_horizontal.png
+  traitement   : 450x150 RGBA -> 216x72, palette 128 couleurs  (3.1 Ko)
+  choix        : seule variante (horizontale) ; fond bleu assume (le lettrage est blanc)
