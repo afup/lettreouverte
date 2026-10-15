@@ -472,3 +472,39 @@ le-biklab.png
   source       : LOGOS - lettre ouverte/Le Bik Lab/logo_lebiklab_horizontal.png
   traitement   : 450x150 RGBA -> 216x72, palette 128 couleurs  (3.1 Ko)
   choix        : seule variante (horizontale) ; fond bleu assume (le lettrage est blanc)
+
+afqt.png
+  organisation : AFQT
+  source       : LOGOS - lettre ouverte/ParisTestConf/ptc_logo_without_text.png
+  traitement   : 531x611 RGBA -> 63x72, palette 128 couleurs  (2.0 Ko)
+  choix        : seule variante (monogramme sans texte)
+
+bordeauxkt.png
+  organisation : BordeauxKt
+  source       : https://bordeauxkt.io/assets/images/logo.png (telecharge le 2026-10-15, dossier fourni vide)
+  traitement   : 500x500 RGBA, recadre sur le logo (0,35)-(500,454) -> 86x72, palette 128 couleurs  (2.0 Ko)
+  choix        : seul logo disponible sur le site
+
+digital-nights.png
+  organisation : Digital Nights
+  source       : LOGOS - lettre ouverte/Digital Nights/Logo_DN_Black__watercolor.png
+  traitement   : 1296x1294 RGB, recadre sur le badge (154,148)-(1143,1175) -> 69x72, palette 128 couleurs  (3.9 Ko)
+  choix        : seule variante ; fond aquarelle conserve, eclaboussures hors badge retirees
+
+flupa.png
+  organisation : Flupa
+  source       : LOGOS - lettre ouverte/FLUPA/Flupa-logo.png
+  traitement   : 284x284 RGBA, recadre sur le logo (23,26)-(261,259) -> 74x72, palette 128 couleurs  (1.5 Ko)
+  choix        : version couleur plutot que les variantes noire et blanche
+
+grappe-numerique.png
+  organisation : Grappe Numérique
+  source       : LOGOS - lettre ouverte/Grappe Numérique Bordeaux/logo_grappe_numerique.png
+  traitement   : 3000x3000 RGBA, recadre sur le logo (507,233)-(2493,2767) -> 56x72, palette 128 couleurs  (2.1 Ko)
+  choix        : seule variante
+
+openstreetmap.svg
+  organisation : OpenStreetMap
+  source       : https://www.openstreetmap.org/assets/osm_logo-cc7d9439….svg (telecharge le 2026-10-15, pas de dossier fourni)
+  traitement   : vectoriel repris tel quel, width/height 256 remplaces par viewBox 0 0 256 256  (51 Ko)
+  choix        : logo officiel du site
