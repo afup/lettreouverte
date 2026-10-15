@@ -217,9 +217,9 @@ keikenchiba.png
 
 mobile-makers.png
   organisation : Mobile Makers (remplace Paris Android User Group)
-  source       : https://mobilemakers.fr/assets/logo/lockup-nav.png
-  traitement   : 378x132 RGBA, ligne "30 avril • Paris" effacee, recadre -> 218x72, palette 128 couleurs
-  choix        : lockup du site sans la date de l'edition
+  source       : LOGOS - lettre ouverte/Mobile Makers   PAUG/mm.png
+  traitement   : 2048x800 RGBA, recadre sur le dessin -> 257x72, palette 128 couleurs  (4.9 Ko)
+  choix        : seule variante
 
 yeeso.png
   organisation : Yeeso
