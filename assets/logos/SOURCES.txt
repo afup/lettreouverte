@@ -508,3 +508,27 @@ openstreetmap.svg
   source       : https://www.openstreetmap.org/assets/osm_logo-cc7d9439….svg (telecharge le 2026-10-15, pas de dossier fourni)
   traitement   : vectoriel repris tel quel, width/height 256 remplaces par viewBox 0 0 256 256  (51 Ko)
   choix        : logo officiel du site
+
+la-cantine-brest.png
+  organisation : La Cantine Brest (An Daol Vras, la Cantine numerique de Brest)
+  source       : LOGOS - lettre ouverte/La cantine Brest/logoCantineBrestFondClair.png
+  traitement   : 262x188 RGBA -> 100x72, palette 128 couleurs  (2.5 Ko)
+  choix        : seule variante (fond clair)
+
+newcrafts.png
+  organisation : NewCrafts
+  source       : LOGOS - lettre ouverte/NewCrafts/logo_newcrafts_all_black (10).png
+  traitement   : 1151x576 RGBA, recadre sur le logo (11,15)-(1142,565) -> 148x72, palette 128 couleurs  (1.5 Ko)
+  choix        : version noire (la variante blanche est prevue pour fond sombre)
+
+php-morocco.png
+  organisation : PHP Morocco
+  source       : LOGOS - lettre ouverte/PHP Morocco/php-morocco.png
+  traitement   : 1617x701 RGB, recadre sur le logo (121,61)-(1496,640) -> 171x72, palette 128 couleurs  (2.8 Ko)
+  choix        : logo complet plutot que le symbole seul ; fond blanc compatible avec la plaque
+
+typo3-association.png
+  organisation : TYPO3 Association
+  source       : LOGOS - lettre ouverte/TYPO3 Association/TYPO3-Logo-rgb.png
+  traitement   : 900x382 RGBA, recadre sur le logo (98,97)-(806,288) -> 260x70, palette 128 couleurs  (2.3 Ko)
+  choix        : version couleur plutot que les variantes noire et blanche
