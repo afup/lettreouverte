@@ -532,3 +532,9 @@ typo3-association.png
   source       : LOGOS - lettre ouverte/TYPO3 Association/TYPO3-Logo-rgb.png
   traitement   : 900x382 RGBA, recadre sur le logo (98,97)-(806,288) -> 260x70, palette 128 couleurs  (2.3 Ko)
   choix        : version couleur plutot que les variantes noire et blanche
+
+golang-franca.png
+  organisation : Golang Franca
+  source       : image transmise avec la demande d'ajout (JPEG 1964x400, pas de dossier fourni)
+  traitement   : 1964x400 RGB, recadre sur le logo (60,102)-(1934,332) -> 260x32, palette 128 couleurs  (4.5 Ko)
+  choix        : seule variante ; fond blanc compatible avec la plaque
